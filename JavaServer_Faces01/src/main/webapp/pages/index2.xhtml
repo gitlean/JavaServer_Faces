@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:a4j="http://richfaces.org/a4j"
+    xmlns:rich="http://richfaces.org/rich">
+    <h:outputStylesheet>
+        .outhello {
+            font-weight: bold;
+            word-break: break-all;
+        }
+    </h:outputStylesheet>
+    <h:form id="form">
+        <h:panelGrid columns="3">
+            <h:outputText value="Name:" />
+            <h:inputText id="par" value="#{user.name}" />
+            <a4j:commandButton value="Say Hello" render="out" action="#{user.jump}" >
+            	<f:attribute name="userId" value="dssccxxxxxxx"/>
+            </a4j:commandButton>
+        </h:panelGrid>
+    </h:form>
+    <br />
+    <a4j:outputPanel id="out">
+        <h:outputText value="Hello #{user.name} !"/>
+    </a4j:outputPanel>
+</ui:composition>

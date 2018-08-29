@@ -1,0 +1,45 @@
+
+http://localhost:8080/JavaServer_Faces01/pages/index.jsf
+八月 29, 2018 8:50:47 下午 com.sun.faces.context.ExternalContextImpl getMimeType
+警告: JSF1091：无法找到文件 /pages/index.jsp 的 Mime 类型。要解决此问题，请将 Mime 类型映射添加到应用程序的 web.xml。
+
+WARNING: JSF1091: No mime type could be found for file QcFormDean.jsp, but wait its a jsf file
+
+
+http://localhost:8080/JavaServer_Faces01/pages/index.xhtml
+可以
+
+
+后缀改为 jsp  不行？？？？
+
+
+--------------------------------------------------------
+
+参考：
+https://www.cnblogs.com/sungoshawk/p/3588579.html
+
+
+important
+https://blog.csdn.net/lovelovelovelovelo/article/details/46523789
+JSF探索--URL映射,web.xml配置
+
+important
+https://www.ibm.com/developerworks/cn/java/j-richfaces4/
+JSF 2 规范反对将 JSP 作为视图定义语言 (VDL)，并包含标准版本的 Facelets 作为首选 VDL。因此，RichFaces 弃用了 JSP 支持并要求启用 Facelets。
+在 JSF 2 之前，Facelets 需要 javax.faces.DEFAULT_SUFFIX 条目将默认后缀 .jsp 覆盖为 .xhtml。但是，现在不再需要该条目，因为现在 Facelets 是默认的 VDL。
+
+https://www.cnblogs.com/zxpgo/articles/2570175.html
+
+
+
+
+
+
+
+https://blog.csdn.net/zyc2009/article/details/12062957
+https://blog.csdn.net/wushuang5566110/article/details/6799437
+
+
+
+
+
